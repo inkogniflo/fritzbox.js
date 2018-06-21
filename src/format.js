@@ -39,7 +39,7 @@ fritzFormat.calls = (calls) => {
 fritzFormat.callsCsvToJson = (csvData) => {
   // Replace the CSV column titles with the English format.
   let lines = csvData.split('\n')
-  lines[1] = 'Type;Date;Name;Telephone number;Extension;Telephone Number;Duration'
+  lines[1] = 'Type;Date;Name;Telephone number;Extension;Telephone number;Duration'
   csvData = lines.join('\n')
 
   // We remove the separator definition and shorten some column titles, so that
